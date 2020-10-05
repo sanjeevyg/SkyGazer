@@ -26,11 +26,10 @@ nav {
 }
 
 
-
 nav#navigationBar ul {
     display: inline-flex;
     list-style: none;
-    color: White;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -38,13 +37,11 @@ nav#navigationBar ul {
     text-decoration: underline;
 }
 
-
 .sign-up {
     display: inline-flex;
     list-style: none;
-    color: White;
+    color: ffffff;
 }
-
 
 nav#navigationBar ul li {
     width: 120px;
@@ -63,8 +60,6 @@ nav#navigationBar ul li {
 }
 
  .introduction {
-    /* background: red; */
-    /* position: absolute; */
     z-index: 1;
     font-family: De-Valencia;
     font-size: 15px;
@@ -82,32 +77,31 @@ nav#navigationBar ul li {
     font-family: De-Valencia;
 }
 
- #nasa-daily-video img {
-     margin-top: 30px;
-     width: 400px;
-     height: auto;
-     border: 1px solid rgb(225, 211, 211);
-     box-shadow: 0 0 10px 0px rgba(126, 117, 117, 0.5)
- }
-
- #nasa-daily-video {
-     display: inline-block;
-     color: white;
-     text-align: center;
-     font-size: 10px;
+#nasa-daily-video img {
+    margin-top: 30px;
+    width: 400px;
+    height: auto;
+    border: 1px solid rgb(225, 211, 211);
+    box-shadow: 0 0 10px 0px rgba(126, 117, 117, 0.5)
+}
+#nasa-daily-video {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 10px;
 }
 
- .introduction h1 {
-     font-size: 23px;
- }
+.introduction h1 {
+    font-size: 23px;
+}
 
- .fa {
-     padding: 5px;
- }
+.fa {
+    padding: 5px;
+}
 
 .signup-form-container {
      display: none;
- }
+}
 
 .login-form-container {
     display: none;
@@ -117,34 +111,30 @@ nav#navigationBar ul li {
     display: block;
     position: absolute;
     background: grey;
- }
+}
 
- #login-list:hover .login-form-container {
-    display: block;
-    position: absolute;
+#login-list:hover .login-form-container {
+   display: block;
+   position: absolute;
+   background: grey;
+   transition-delay:1s;
+}
+#log-in-popup {
     background: grey;
+    padding: 20px;
+    transform: scale(0);
+    margin-bottom: 100px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 15px;
+}
+#sign-up-list:hover .signup-form-container #new-account input {
+    display: block;
+    margin: 30px;
+    z-index: 15;
     transition-delay:1s;
- }
-
- #log-in-popup {
-     background: grey;
-     padding: 20px;
-     transform: scale(0);
-     margin-bottom: 100px;
-     margin-top: 0px;
-     text-align: center;
-     font-size: 15px;
- }
-
-
- #sign-up-list:hover .signup-form-container #new-account input {
-     display: block;
-     margin: 30px;
-     z-index: 15;
-     transition-delay:1s;
- }
-
- #login-list:hover .login-form-container #login-user input {
+}
+#login-list:hover .login-form-container #login-user input {
     display: block;
     margin: 30px;
     z-index: 15;
@@ -167,9 +157,11 @@ nav#navigationBar ul li {
 .planet:hover {
     cursor: pointer;
 }
+
 .sun:hover {
    cursor: pointer;
 }
+
 .planet-info {
    margin-top: 170px;
    font-family: De-Valencia;
@@ -205,6 +197,42 @@ nav#navigationBar ul li {
     padding: 5px;
 }
 
+#search-form-1 {
+    font-family: De-Valencia;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+#search-form-1::placeholder {
+  text-align: center;
+  font-size: 19px;
+}
+
+#search-form-1:focus {
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+.search-form .search-button {
+    background-color: transparent;
+    border: none;
+    outline: none; 
+}
+
+.search-form .search-button i {
+    font-size: 18px;
+    color: white;
+}
+
+.search-form .search-button:hover {
+    cursor: pointer;
+}
+
 /* ...................................................................... */
 
 .body-frame {
@@ -226,13 +254,16 @@ nav#navigationBar ul li {
     font-size: 15px
 }
 
+#planet-group-1 div:hover {
+    cursor: pointer;
+    font-size: 20px;
+}
+
 #planet-group-1 {
 padding-bottom: 20px;
 padding-top: 0px;
 margin-top: 0px;
 text-align: left;
-    /* padding-right: 130px; */
-    /* border-right: 2px solid white; */
 }
 
 #planet-group-1 div {
@@ -241,29 +272,9 @@ text-align: left;
     display: inline-block;
 }
 
-/* #planet-group-2 {
-    padding-left: 0px;
-    margin-right: 0px;
-    text-align: left;
-}
 
-#planet-group-2 div {
-    padding: 5px;
-    padding-left: 0px;
-    display: inline-block;
-} */
-
-#planet-group-1 div:hover {
-    font-size: 25px;
-    cursor: pointer; 
-}
-
-/* #planet-group-2 div:hover {
-    font-size: 25px;
-    cursor: pointer; 
-} */
- 
 /* ...................................................................... */
+
 .planet, .star, .orbit, .moon-orbit{
     position: absolute;
     width: var(--size);
@@ -308,7 +319,6 @@ text-align: left;
 }
 
 #moon {
-    /* position: absolute; */
     --size: 3px;
     background: rgb(252, 251, 252);
     animation: moon 1.66s infinite linear;
@@ -321,14 +331,12 @@ text-align: left;
 }
 
 #mars-moon1 {
-    /* position: absolute; */
     --size: 2px;
     background: rgb(252, 251, 252);
     animation: mars-moon 1.66s infinite linear;
 }
 
 #mars-moon2 {
-    /* position: absolute; */
     --size: 2px;
     background: rgb(185, 103, 52);
     animation: mars-moon 1.2s infinite linear;
@@ -341,28 +349,24 @@ text-align: left;
 }
 
 #jupiter-moon1 {
-    /* position: absolute; */
     --size: 3px;
     background: rgb(251, 251, 252);
     animation: jupiter-moon 1.4s infinite linear;
 }
 
 #jupiter-moon2 {
-    /* position: absolute; */
     --size: 4px;
     background: rgb(86, 255, 255);
     animation: jupiter-moon 1.2s infinite linear;
 }
 
 #jupiter-moon3 {
-    /* position: absolute; */
     --size: 3px;
     background: rgb(255, 209, 109);
     animation: jupiter-moon .8s infinite linear;
 }
 
 #jupiter-moon4 {
-    /* position: absolute; */
     --size: 2px;
     background: rgb(255, 209, 109);
     animation: jupiter-moon 1s infinite linear;
@@ -383,9 +387,7 @@ text-align: left;
     width: 180%;
     height: 10%;
     border-top: 2px solid white;
-    /* border-top: 0; */
     border-radius: 50%;
-    /* transform: saturn translate(-50%, -50%); */
 }
 
 .uranus {
@@ -395,28 +397,24 @@ text-align: left;
 }
 
 #uranus-moon1 {
-    /* position: absolute; */
     --size: 2px;
     background: rgb(251, 251, 252);
     animation: uranus-moon .7s infinite linear;
 }
 
 #uranus-moon2 {
-    /* position: absolute; */
     --size: 1.5px;
     background: rgb(86, 255, 255);
     animation: uranus-moon .8s infinite linear;
 }
 
 #uranus-moon3 {
-    /* position: absolute; */
     --size: 2px;
     background: rgb(255, 209, 109);
     animation: uranus-moon .9s infinite linear;
 }
 
 #neptune-moon1 {
-    /* position: absolute; */
     --size: 2px;
     background: rgb(255, 209, 109);
     animation: neptune-moon 1.2s infinite linear;
