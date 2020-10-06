@@ -182,24 +182,10 @@ function login(event) {
     })   
 }
 
-// function authorizeUser(token) {
-//     fetch(`${baseURL}/profile`, {
-//         method: "GET",
-//         headers: {
-//             "content-type": "application/json",
-//             "Authorization": `Bearer ${token}`
-//         }
-//     }).then(response => response.json())
-//     .then(console.log)
-// }
-
 function logout() {
     localStorage.removeItem("token")
     showNavElement()
 }
-
-
-
 
 function nasaVideo() {
     fetch(`${nasaBaseURL}${nasaApiKey}`)
