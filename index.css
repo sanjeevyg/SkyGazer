@@ -261,9 +261,10 @@ nav#navigationBar ul li {
 
 #planet-group-1 {
 padding-bottom: 20px;
-padding-top: 0px;
+padding-top: 150px;
 margin-top: 0px;
 text-align: left;
+position: fixed;
 }
 
 #planet-group-1 div {

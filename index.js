@@ -76,6 +76,8 @@ if(token) {
 } else {
     showNavElement()
 }
+
+
 // .........................................................................................
 const profilePopUpTab = document.querySelector("#log-in-popup") 
 const profileTab = document.querySelector("#profile-tab") 
