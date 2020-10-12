@@ -251,7 +251,7 @@ nav#navigationBar ul li {
     margin-left: 60px;
     justify-content: center;
     padding-top: 0px;
-    font-size: 15px
+    font-size: 15px;
 }
 
 #planet-group-1 div:hover {
@@ -261,10 +261,10 @@ nav#navigationBar ul li {
 
 #planet-group-1 {
 padding-bottom: 20px;
-padding-top: 150px;
+padding-top: 0px;
 margin-top: 0px;
-text-align: left;
-position: fixed;
+text-align: center;
+z-index: 50;
 }
 
 #planet-group-1 div {
